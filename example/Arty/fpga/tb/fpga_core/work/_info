@@ -1,0 +1,764 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.4_3 2024.02, Feb 17 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/casager/repos/verilog-ethernet/example/Arty/fpga/tb/fpga_core
+T_opt
+Z2 !s110 1728926272
+Vkd0YO86EU3D46`JCh9Qob3
+04 8 4 work stimulus fast 0
+=1-000ae431a4f1-670d5240-5aa87-3634
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.4_3;77
+varbiter
+2../../lib/eth/lib/axis/rtl/arbiter.v
+R2
+!i10b 1
+!s100 mkmIBFhNB36dJIJ3F1hGN2
+IUOJJO2KHa9YNo6Y7E`5Qh3
+R1
+Z4 w1728919509
+8../../lib/eth/lib/axis/rtl/arbiter.v
+F../../lib/eth/lib/axis/rtl/arbiter.v
+!i122 27
+L0 34 124
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2023.4_3;77
+r1
+!s85 0
+31
+Z7 !s108 1728926272.000000
+!s107 ../../lib/eth/lib/axis/rtl/arbiter.v|
+!s90 ../../lib/eth/lib/axis/rtl/arbiter.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+varp
+2../../lib/eth/rtl/arp.v
+Z9 !s110 1728926271
+!i10b 1
+!s100 YNWI?[4?I^=C3?V8RclE>0
+I[>jj[kS??^afj^k4BS4;Q1
+R1
+R4
+8../../lib/eth/rtl/arp.v
+F../../lib/eth/rtl/arp.v
+!i122 22
+L0 34 417
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1728926271.000000
+!s107 ../../lib/eth/rtl/arp.v|
+!s90 ../../lib/eth/rtl/arp.v|
+!i113 0
+R8
+R3
+varp_cache
+2../../lib/eth/rtl/arp_cache.v
+R9
+!i10b 1
+!s100 h8:iW`3oM35YCN@5holAS2
+IOHZZQRUUmZ_RcgzollDI_3
+R1
+R4
+8../../lib/eth/rtl/arp_cache.v
+F../../lib/eth/rtl/arp_cache.v
+!i122 23
+L0 34 212
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/arp_cache.v|
+!s90 ../../lib/eth/rtl/arp_cache.v|
+!i113 0
+R8
+R3
+varp_eth_rx
+2../../lib/eth/rtl/arp_eth_rx.v
+R9
+!i10b 1
+!s100 b?V06leXZ41o<4WjkkBC22
+I<S4laEc5GBhjGVMcoOE]V0
+R1
+R4
+8../../lib/eth/rtl/arp_eth_rx.v
+F../../lib/eth/rtl/arp_eth_rx.v
+!i122 24
+L0 34 296
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/arp_eth_rx.v|
+!s90 ../../lib/eth/rtl/arp_eth_rx.v|
+!i113 0
+R8
+R3
+varp_eth_tx
+2../../lib/eth/rtl/arp_eth_tx.v
+R2
+!i10b 1
+!s100 IJdT0Xf4IF0od?@6IKFDM3
+Ici[flb_nl8o9S@XY]fR6H3
+R1
+R4
+8../../lib/eth/rtl/arp_eth_tx.v
+F../../lib/eth/rtl/arp_eth_tx.v
+!i122 25
+L0 34 333
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/arp_eth_tx.v|
+!s90 ../../lib/eth/rtl/arp_eth_tx.v|
+!i113 0
+R8
+R3
+vaxis_async_fifo
+2../../lib/eth/lib/axis/rtl/axis_async_fifo.v
+R2
+!i10b 1
+!s100 ncoWmAkYhXV`ZGFg8iE=l1
+IGAI_lW:ngGLS2_2Rcz>412
+R1
+R4
+8../../lib/eth/lib/axis/rtl/axis_async_fifo.v
+F../../lib/eth/lib/axis/rtl/axis_async_fifo.v
+!i122 30
+L0 34 875
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../../lib/eth/lib/axis/rtl/axis_async_fifo.v|
+!s90 ../../lib/eth/lib/axis/rtl/axis_async_fifo.v|
+!i113 0
+R8
+R3
+vaxis_async_fifo_adapter
+2../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v
+R2
+!i10b 1
+!s100 m3QmWAK`1?kSBbb5n206A3
+ILzngLAMU;<b`O04Z;YMOI2
+R1
+R4
+8../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v
+F../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v
+!i122 31
+L0 34 343
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v|
+!s90 ../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v|
+!i113 0
+R8
+R3
+vaxis_fifo
+2../../lib/eth/lib/axis/rtl/axis_fifo.v
+R2
+!i10b 1
+!s100 N_1[elBFS3e:;Q913Im<30
+IUGP?ThIa9zN?Q[Ec:@4L^2
+R1
+R4
+8../../lib/eth/lib/axis/rtl/axis_fifo.v
+F../../lib/eth/lib/axis/rtl/axis_fifo.v
+!i122 29
+L0 34 530
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../../lib/eth/lib/axis/rtl/axis_fifo.v|
+!s90 ../../lib/eth/lib/axis/rtl/axis_fifo.v|
+!i113 0
+R8
+R3
+vaxis_gmii_rx
+2../../lib/eth/rtl/axis_gmii_rx.v
+R9
+!i10b 1
+!s100 Gz8U_j?^kR]a>E7EJKIR=2
+IgA3z]gCB:CT_mocge@EAi3
+R1
+R4
+8../../lib/eth/rtl/axis_gmii_rx.v
+F../../lib/eth/rtl/axis_gmii_rx.v
+!i122 7
+L0 34 323
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/axis_gmii_rx.v|
+!s90 ../../lib/eth/rtl/axis_gmii_rx.v|
+!i113 0
+R8
+R3
+vaxis_gmii_tx
+2../../lib/eth/rtl/axis_gmii_tx.v
+R9
+!i10b 1
+!s100 `6mz_n1>2R;8W13K<UeER3
+I>OU`57oMmRPG?TkmKGdc@1
+R1
+R4
+8../../lib/eth/rtl/axis_gmii_tx.v
+F../../lib/eth/rtl/axis_gmii_tx.v
+!i122 8
+L0 34 423
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/axis_gmii_tx.v|
+!s90 ../../lib/eth/rtl/axis_gmii_tx.v|
+!i113 0
+R8
+R3
+veth_arb_mux
+2../../lib/eth/rtl/eth_arb_mux.v
+R2
+!i10b 1
+!s100 RU@=YM6W1:6R=bb;[9WkQ0
+I;z2]Pn]3Kc1Df9kz[M:B80
+R1
+R4
+8../../lib/eth/rtl/eth_arb_mux.v
+F../../lib/eth/rtl/eth_arb_mux.v
+!i122 26
+L0 34 280
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../../lib/eth/rtl/eth_arb_mux.v|
+!s90 ../../lib/eth/rtl/eth_arb_mux.v|
+!i113 0
+R8
+R3
+veth_axis_rx
+2../../lib/eth/rtl/eth_axis_rx.v
+R9
+!i10b 1
+!s100 1VTg`hPF2;CTXDHD`OS7l1
+I4Z`MY4nnKW]dTidUhZXo70
+R1
+R4
+8../../lib/eth/rtl/eth_axis_rx.v
+F../../lib/eth/rtl/eth_axis_rx.v
+!i122 10
+L0 34 370
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/eth_axis_rx.v|
+!s90 ../../lib/eth/rtl/eth_axis_rx.v|
+!i113 0
+R8
+R3
+veth_axis_tx
+2../../lib/eth/rtl/eth_axis_tx.v
+R9
+!i10b 1
+!s100 BdcRTla>JXJNOQ=@5eF4J3
+IIkBgK=3bhYA=mn6bDI]UI0
+R1
+R4
+8../../lib/eth/rtl/eth_axis_tx.v
+F../../lib/eth/rtl/eth_axis_tx.v
+!i122 11
+L0 34 374
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/eth_axis_tx.v|
+!s90 ../../lib/eth/rtl/eth_axis_tx.v|
+!i113 0
+R8
+R3
+veth_mac_1g
+2../../lib/eth/rtl/eth_mac_1g.v
+R9
+!i10b 1
+!s100 m84[MRGPjcf3:@@6J@gm90
+IDT8OYggEW3AbWJNTCEIQP0
+R1
+w1728926265
+8../../lib/eth/rtl/eth_mac_1g.v
+F../../lib/eth/rtl/eth_mac_1g.v
+!i122 6
+L0 34 609
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/eth_mac_1g.v|
+!s90 ../../lib/eth/rtl/eth_mac_1g.v|
+!i113 0
+R8
+R3
+veth_mac_mii
+2../../lib/eth/rtl/eth_mac_mii.v
+R9
+!i10b 1
+!s100 kknk2Q^n_Dk`I^iU`<o`>1
+Ihbe3S2@Ac>@9n5TnQ?^8=0
+R1
+R4
+8../../lib/eth/rtl/eth_mac_mii.v
+F../../lib/eth/rtl/eth_mac_mii.v
+!i122 3
+L0 34 139
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/eth_mac_mii.v|
+!s90 ../../lib/eth/rtl/eth_mac_mii.v|
+!i113 0
+R8
+R3
+veth_mac_mii_fifo
+2../../lib/eth/rtl/eth_mac_mii_fifo.v
+R9
+!i10b 1
+!s100 6:8Hie55fS<G0o?C9WZ^N3
+IN`6VkzX_PJ^iM[olN[<z10
+R1
+R4
+8../../lib/eth/rtl/eth_mac_mii_fifo.v
+F../../lib/eth/rtl/eth_mac_mii_fifo.v
+!i122 2
+L0 34 302
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/eth_mac_mii_fifo.v|
+!s90 ../../lib/eth/rtl/eth_mac_mii_fifo.v|
+!i113 0
+R8
+R3
+vfpga_core
+2../../rtl/fpga_core.v
+R9
+!i10b 1
+!s100 [`cH1knaIJ5nQ;VPbYINo1
+In=Oe0P^b4e4GbAPndi1zb2
+R1
+R4
+8../../rtl/fpga_core.v
+F../../rtl/fpga_core.v
+!i122 0
+L0 34 561
+R5
+R6
+r1
+!s85 0
+31
+!s108 1728926270.000000
+!s107 ../../rtl/fpga_core.v|
+!s90 ../../rtl/fpga_core.v|
+!i113 0
+R8
+R3
+vip
+2../../lib/eth/rtl/ip.v
+R9
+!i10b 1
+!s100 aS4?E_ca_F6ZKYRQjN^PH1
+I8LVz:z7J?F4;e3Z@ahmAM2
+R1
+R4
+8../../lib/eth/rtl/ip.v
+F../../lib/eth/rtl/ip.v
+!i122 18
+L0 34 310
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ip.v|
+!s90 ../../lib/eth/rtl/ip.v|
+!i113 0
+R8
+R3
+vip_arb_mux
+2../../lib/eth/rtl/ip_arb_mux.v
+R9
+!i10b 1
+!s100 PeRCHce[7Fa6F=3942bg63
+IF`8;jP?MUR@b9@C;e=z5G1
+R1
+R4
+8../../lib/eth/rtl/ip_arb_mux.v
+F../../lib/eth/rtl/ip_arb_mux.v
+!i122 21
+L0 34 371
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ip_arb_mux.v|
+!s90 ../../lib/eth/rtl/ip_arb_mux.v|
+!i113 0
+R8
+R3
+vip_complete
+2../../lib/eth/rtl/ip_complete.v
+R9
+!i10b 1
+!s100 :;C56b6DA]j2LOfeH6T8L1
+IZ`GddlJ1MBGZg^?KKXo:23
+R1
+R4
+8../../lib/eth/rtl/ip_complete.v
+F../../lib/eth/rtl/ip_complete.v
+!i122 17
+L0 34 409
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ip_complete.v|
+!s90 ../../lib/eth/rtl/ip_complete.v|
+!i113 0
+R8
+R3
+vip_eth_rx
+2../../lib/eth/rtl/ip_eth_rx.v
+R9
+!i10b 1
+!s100 Gh]BcR;eK[6;`Ih;_DY782
+ISBNdEbSn7jjH[BOcU[81<3
+R1
+R4
+8../../lib/eth/rtl/ip_eth_rx.v
+F../../lib/eth/rtl/ip_eth_rx.v
+!i122 19
+L0 34 546
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ip_eth_rx.v|
+!s90 ../../lib/eth/rtl/ip_eth_rx.v|
+!i113 0
+R8
+R3
+vip_eth_tx
+2../../lib/eth/rtl/ip_eth_tx.v
+R9
+!i10b 1
+!s100 bz2fB@k@Rf:>2:GMBe7FO1
+IHMOHE4E9BfJ_gmZO`H5Q^0
+R1
+R4
+8../../lib/eth/rtl/ip_eth_tx.v
+F../../lib/eth/rtl/ip_eth_tx.v
+!i122 20
+L0 34 466
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ip_eth_tx.v|
+!s90 ../../lib/eth/rtl/ip_eth_tx.v|
+!i113 0
+R8
+R3
+vlfsr
+2../../lib/eth/rtl/lfsr.v
+R9
+!i10b 1
+!s100 LK@ga?E<]X@TM_MV8]>eK2
+I>N0@mE:J01S]_QjfmNIH71
+R1
+R4
+8../../lib/eth/rtl/lfsr.v
+F../../lib/eth/rtl/lfsr.v
+!i122 9
+L0 34 412
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/lfsr.v|
+!s90 ../../lib/eth/rtl/lfsr.v|
+!i113 0
+R8
+R3
+vmii_phy_if
+2../../lib/eth/rtl/mii_phy_if.v
+R9
+!i10b 1
+!s100 QR0o58cLXb<OXXkU]X9jd1
+IRioQcfDb<Z?:9YWinfOSS2
+R1
+R4
+8../../lib/eth/rtl/mii_phy_if.v
+F../../lib/eth/rtl/mii_phy_if.v
+!i122 5
+L0 34 106
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/mii_phy_if.v|
+!s90 ../../lib/eth/rtl/mii_phy_if.v|
+!i113 0
+R8
+R3
+vpriority_encoder
+2../../lib/eth/lib/axis/rtl/priority_encoder.v
+R2
+!i10b 1
+!s100 ;?I]P2:`4CifV@7MK8[4B1
+IV]C<A`IVgj1YEKz@g@`f]1
+R1
+R4
+8../../lib/eth/lib/axis/rtl/priority_encoder.v
+F../../lib/eth/lib/axis/rtl/priority_encoder.v
+!i122 28
+L0 34 57
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../../lib/eth/lib/axis/rtl/priority_encoder.v|
+!s90 ../../lib/eth/lib/axis/rtl/priority_encoder.v|
+!i113 0
+R8
+R3
+vssio_sdr_in
+2../../lib/eth/rtl/ssio_sdr_in.v
+R9
+!i10b 1
+!s100 FPHD9Cdz>iC_=e7PhCbGo0
+IWoWo@[6=:cXM=8SPnCSi`3
+R1
+R4
+8../../lib/eth/rtl/ssio_sdr_in.v
+F../../lib/eth/rtl/ssio_sdr_in.v
+!i122 4
+L0 34 132
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/ssio_sdr_in.v|
+!s90 ../../lib/eth/rtl/ssio_sdr_in.v|
+!i113 0
+R8
+R3
+vstimulus
+2eth_tb.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R9
+!i10b 1
+!s100 ^[>WhkWleb880ZXMLl5mk0
+IYzTLbD;8;79YWSOZ1<h;a0
+S1
+R1
+w1728926083
+8eth_tb.sv
+Feth_tb.sv
+!i122 1
+L0 2 120
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 eth_tb.sv|
+!s90 eth_tb.sv|
+!i113 0
+R8
+R3
+vudp
+2../../lib/eth/rtl/udp.v
+R9
+!i10b 1
+!s100 BBB>A8Yk8a;1[CjO5ZJP<0
+ImXN6jI16ZaASY`fCD2LCC3
+R1
+R4
+8../../lib/eth/rtl/udp.v
+F../../lib/eth/rtl/udp.v
+!i122 14
+L0 34 382
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/udp.v|
+!s90 ../../lib/eth/rtl/udp.v|
+!i113 0
+R8
+R3
+vudp_checksum_gen
+2../../lib/eth/rtl/udp_checksum_gen.v
+R9
+!i10b 1
+!s100 g0`9dQ0E]01V=V^]AYbm]1
+IeAO?M9FYHS1_OBO8MiYKL0
+R1
+R4
+8../../lib/eth/rtl/udp_checksum_gen.v
+F../../lib/eth/rtl/udp_checksum_gen.v
+!i122 13
+L0 34 526
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/udp_checksum_gen.v|
+!s90 ../../lib/eth/rtl/udp_checksum_gen.v|
+!i113 0
+R8
+R3
+vudp_complete
+2../../lib/eth/rtl/udp_complete.v
+R9
+!i10b 1
+!s100 jBS]32O`mTI74Ri4GXg?X2
+Iee;oiI>bAR<1h]S]UT7WW3
+R1
+R4
+8../../lib/eth/rtl/udp_complete.v
+F../../lib/eth/rtl/udp_complete.v
+!i122 12
+L0 34 606
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/udp_complete.v|
+!s90 ../../lib/eth/rtl/udp_complete.v|
+!i113 0
+R8
+R3
+vudp_ip_rx
+2../../lib/eth/rtl/udp_ip_rx.v
+R9
+!i10b 1
+!s100 9KXYSB_J7JbG=DGGeQCXd0
+IALz9FQF2oP;=:90MoH@i31
+R1
+R4
+8../../lib/eth/rtl/udp_ip_rx.v
+F../../lib/eth/rtl/udp_ip_rx.v
+!i122 15
+L0 34 501
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/udp_ip_rx.v|
+!s90 ../../lib/eth/rtl/udp_ip_rx.v|
+!i113 0
+R8
+R3
+vudp_ip_tx
+2../../lib/eth/rtl/udp_ip_tx.v
+R9
+!i10b 1
+!s100 gBSAzLmfJ;mmQNbBboh:g0
+INgkDlI4SB1Binb9Tm@W7z0
+R1
+R4
+8../../lib/eth/rtl/udp_ip_tx.v
+F../../lib/eth/rtl/udp_ip_tx.v
+!i122 16
+L0 34 462
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../../lib/eth/rtl/udp_ip_tx.v|
+!s90 ../../lib/eth/rtl/udp_ip_tx.v|
+!i113 0
+R8
+R3

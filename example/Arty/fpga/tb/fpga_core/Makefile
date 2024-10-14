@@ -20,7 +20,7 @@
 
 TOPLEVEL_LANG = verilog
 
-SIM ?= icarus
+SIM ?= questa
 WAVES ?= 0
 
 COCOTB_HDL_TIMEUNIT = 1ns
