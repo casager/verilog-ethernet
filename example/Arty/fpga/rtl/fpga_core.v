@@ -185,11 +185,11 @@ wire [15:0] rx_udp_source_port;
 wire [15:0] rx_udp_dest_port;
 wire [15:0] rx_udp_length;
 wire [15:0] rx_udp_checksum;
-wire [7:0] rx_udp_payload_axis_tdata;
-wire rx_udp_payload_axis_tvalid;
-wire rx_udp_payload_axis_tready;
-wire rx_udp_payload_axis_tlast;
-wire rx_udp_payload_axis_tuser;
+(* mark_debug = "true" *) wire [7:0] rx_udp_payload_axis_tdata;
+(* mark_debug = "true" *) wire rx_udp_payload_axis_tvalid;
+(* mark_debug = "true" *) wire rx_udp_payload_axis_tready;
+(* mark_debug = "true" *) wire rx_udp_payload_axis_tlast;
+(* mark_debug = "true" *) wire rx_udp_payload_axis_tuser;
 
 wire tx_udp_hdr_valid;
 wire tx_udp_hdr_ready;
@@ -202,23 +202,23 @@ wire [15:0] tx_udp_source_port;
 wire [15:0] tx_udp_dest_port;
 wire [15:0] tx_udp_length;
 wire [15:0] tx_udp_checksum;
-wire [7:0] tx_udp_payload_axis_tdata;
-wire tx_udp_payload_axis_tvalid;
-wire tx_udp_payload_axis_tready;
-wire tx_udp_payload_axis_tlast;
-wire tx_udp_payload_axis_tuser;
+(* mark_debug = "true" *) wire [7:0] tx_udp_payload_axis_tdata;
+(* mark_debug = "true" *) wire tx_udp_payload_axis_tvalid;
+(* mark_debug = "true" *) wire tx_udp_payload_axis_tready;
+(* mark_debug = "true" *) wire tx_udp_payload_axis_tlast;
+(* mark_debug = "true" *) wire tx_udp_payload_axis_tuser;
 
-wire [7:0] rx_fifo_udp_payload_axis_tdata;
-wire rx_fifo_udp_payload_axis_tvalid;
-wire rx_fifo_udp_payload_axis_tready;
-wire rx_fifo_udp_payload_axis_tlast;
-wire rx_fifo_udp_payload_axis_tuser;
+(* mark_debug = "true" *) wire [7:0] rx_fifo_udp_payload_axis_tdata;
+(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tvalid;
+(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tready;
+(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tlast;
+(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tuser;
 
-wire [7:0] tx_fifo_udp_payload_axis_tdata;
-wire tx_fifo_udp_payload_axis_tvalid;
-wire tx_fifo_udp_payload_axis_tready;
-wire tx_fifo_udp_payload_axis_tlast;
-wire tx_fifo_udp_payload_axis_tuser;
+(* mark_debug = "true" *) wire [7:0] tx_fifo_udp_payload_axis_tdata;
+(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tvalid;
+(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tready;
+(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tlast;
+(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tuser;
 
 // Configuration
 wire [47:0] local_mac   = 48'h02_00_00_00_00_00;
