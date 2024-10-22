@@ -80,7 +80,8 @@ module fpga (
      * UART: 500000 bps, 8N1
      */
     input  wire       uart_rxd,
-    output wire       uart_txd
+    output wire       uart_txd,
+
 );
 
 // Clock and reset

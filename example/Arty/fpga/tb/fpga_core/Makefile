@@ -60,6 +60,9 @@ VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/priority_encoder.v
 VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/axis_fifo.v
 VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/axis_async_fifo.v
 VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v
+VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/counter.sv
+VERILOG_SOURCES += ../../lib/eth/lib/axis/rtl/flopenr.sv
+
 
 # module parameters
 #export PARAM_A := value
