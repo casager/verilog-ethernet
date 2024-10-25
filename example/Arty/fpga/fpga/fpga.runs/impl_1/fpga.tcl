@@ -117,188 +117,39 @@ OPTRACE "impl_1" END { }
 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
-OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
-start_step init_design
-set ACTIVE_STEP init_design
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
 set rc [catch {
-  create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
-  set_param runs.launchOptions { -jobs 4  }
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a100tcsg324-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  create_msg_db write_bitstream.pb
+  set_param chipscope.maxJobs 8
+  set_param runs.launchOptions { -jobs 16  }
+  open_checkpoint fpga_routed.dcp
   set_property webtalk.parent_dir /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/wt [current_project]
-  set_property parent.project_path /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr [current_project]
-  set_property ip_output_repo /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/synth_1/fpga.dcp
-OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "read constraints: implementation_pre" START { }
-OPTRACE "read constraints: implementation_pre" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top fpga -part xc7a100tcsg324-1 
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
-OPTRACE "init_design_reports" START { REPORT }
-OPTRACE "init_design_reports" END { }
-OPTRACE "init_design_write_hwdef" START { }
-OPTRACE "init_design_write_hwdef" END { }
-  close_msg_db -file init_design.pb
+set_property TOP fpga [current_fileset]
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  catch { write_mem_info -force -no_partial_mmi fpga.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force fpga.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force fpga}
+  catch {file copy -force fpga.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
-  step_failed init_design
+  step_failed write_bitstream
   return -code error $RESULT
 } else {
-  end_step init_design
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
-OPTRACE "Phase: Init Design" END { }
-OPTRACE "Phase: Opt Design" START { ROLLUP_AUTO }
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-OPTRACE "read constraints: opt_design" START { }
-OPTRACE "read constraints: opt_design" END { }
-OPTRACE "opt_design" START { }
-  opt_design 
-OPTRACE "opt_design" END { }
-OPTRACE "read constraints: opt_design_post" START { }
-OPTRACE "read constraints: opt_design_post" END { }
-OPTRACE "opt_design reports" START { REPORT }
-  create_report "impl_1_opt_report_drc_0" "report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx"
-OPTRACE "opt_design reports" END { }
-OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force fpga_opt.dcp
-OPTRACE "Opt Design: write_checkpoint" END { }
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Opt Design" END { }
-OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-OPTRACE "read constraints: place_design" START { }
-OPTRACE "read constraints: place_design" END { }
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-OPTRACE "implement_debug_core" START { }
-    implement_debug_core 
-OPTRACE "implement_debug_core" END { }
-  } 
-OPTRACE "place_design" START { }
-  place_design 
-OPTRACE "place_design" END { }
-OPTRACE "read constraints: place_design_post" START { }
-OPTRACE "read constraints: place_design_post" END { }
-OPTRACE "place_design reports" START { REPORT }
-  create_report "impl_1_place_report_io_0" "report_io -file fpga_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file fpga_utilization_placed.rpt -pb fpga_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file fpga_control_sets_placed.rpt"
-OPTRACE "place_design reports" END { }
-OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force fpga_placed.dcp
-OPTRACE "Place Design: write_checkpoint" END { }
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Place Design" END { }
-OPTRACE "Phase: Physical Opt Design" START { ROLLUP_AUTO }
-start_step phys_opt_design
-set ACTIVE_STEP phys_opt_design
-set rc [catch {
-  create_msg_db phys_opt_design.pb
-OPTRACE "read constraints: phys_opt_design" START { }
-OPTRACE "read constraints: phys_opt_design" END { }
-OPTRACE "phys_opt_design" START { }
-  phys_opt_design 
-OPTRACE "phys_opt_design" END { }
-OPTRACE "read constraints: phys_opt_design_post" START { }
-OPTRACE "read constraints: phys_opt_design_post" END { }
-OPTRACE "phys_opt_design report" START { REPORT }
-OPTRACE "phys_opt_design report" END { }
-OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force fpga_physopt.dcp
-OPTRACE "Post-Place Phys Opt Design: write_checkpoint" END { }
-  close_msg_db -file phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step phys_opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Physical Opt Design" END { }
-OPTRACE "Phase: Route Design" START { ROLLUP_AUTO }
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-OPTRACE "read constraints: route_design" START { }
-OPTRACE "read constraints: route_design" END { }
-OPTRACE "route_design" START { }
-  route_design 
-OPTRACE "route_design" END { }
-OPTRACE "read constraints: route_design_post" START { }
-OPTRACE "read constraints: route_design_post" END { }
-OPTRACE "route_design reports" START { REPORT }
-  create_report "impl_1_route_report_drc_0" "report_drc -file fpga_drc_routed.rpt -pb fpga_drc_routed.pb -rpx fpga_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file fpga_route_status.rpt -pb fpga_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -report_unconstrained -file fpga_timing_summary_routed.rpt -pb fpga_timing_summary_routed.pb -rpx fpga_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file fpga_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file fpga_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file fpga_bus_skew_routed.rpt -pb fpga_bus_skew_routed.pb -rpx fpga_bus_skew_routed.rpx"
-OPTRACE "route_design reports" END { }
-OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force fpga_routed.dcp
-OPTRACE "Route Design: write_checkpoint" END { }
-OPTRACE "route_design misc" START { }
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
-OPTRACE "route_design write_checkpoint" END { }
-  write_checkpoint -force fpga_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "route_design misc" END { }
-OPTRACE "Phase: Route Design" END { }
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

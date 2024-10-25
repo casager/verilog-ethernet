@@ -84,6 +84,10 @@ set_property ip_output_repo /home/casager/repos/verilog-ethernet/example/Arty/fp
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+read_verilog -library xil_defaultlib -sv {
+  /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/rtl/counter.sv
+  /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/rtl/flopenr.sv
+}
 read_verilog -library xil_defaultlib {
   /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/rtl/arbiter.v
   /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/rtl/arp.v

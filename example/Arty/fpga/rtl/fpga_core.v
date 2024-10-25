@@ -46,7 +46,7 @@ module fpga_core #
     /*
      * GPIO
      */
-    input  wire [3:0] btn,
+    (* mark_debug = "true" *) input  wire [3:0] btn,
     input  wire [3:0] sw,
     output wire       led0_r,
     output wire       led0_g,
@@ -73,7 +73,7 @@ module fpga_core #
     input  wire       phy_rx_dv,
     input  wire       phy_rx_er,
     input  wire       phy_tx_clk,
-    output wire [3:0] phy_txd,
+    (* mark_debug = "true" *) output wire [3:0] phy_txd,
     output wire       phy_tx_en,
     input  wire       phy_col,
     input  wire       phy_crs,
@@ -83,7 +83,7 @@ module fpga_core #
      * UART: 115200 bps, 8N1
      */
     input  wire       uart_rxd,
-    output wire       uart_txd,
+    output wire       uart_txd
 
     //input wire countRst //added this for counter (just use a button)
 );
@@ -187,11 +187,11 @@ wire [15:0] rx_udp_source_port;
 wire [15:0] rx_udp_dest_port;
 wire [15:0] rx_udp_length;
 wire [15:0] rx_udp_checksum;
-(* mark_debug = "true" *) wire [7:0] rx_udp_payload_axis_tdata;
-(* mark_debug = "true" *) wire rx_udp_payload_axis_tvalid;
-(* mark_debug = "true" *) wire rx_udp_payload_axis_tready;
-(* mark_debug = "true" *) wire rx_udp_payload_axis_tlast;
-(* mark_debug = "true" *) wire rx_udp_payload_axis_tuser;
+wire [7:0] rx_udp_payload_axis_tdata;
+wire rx_udp_payload_axis_tvalid;
+wire rx_udp_payload_axis_tready;
+wire rx_udp_payload_axis_tlast;
+wire rx_udp_payload_axis_tuser;
 
 wire tx_udp_hdr_valid;
 wire tx_udp_hdr_ready;
@@ -205,22 +205,22 @@ wire [15:0] tx_udp_dest_port;
 wire [15:0] tx_udp_length;
 wire [15:0] tx_udp_checksum;
 (* mark_debug = "true" *) wire [7:0] tx_udp_payload_axis_tdata;
-(* mark_debug = "true" *) wire tx_udp_payload_axis_tvalid;
-(* mark_debug = "true" *) wire tx_udp_payload_axis_tready;
-(* mark_debug = "true" *) wire tx_udp_payload_axis_tlast;
-(* mark_debug = "true" *) wire tx_udp_payload_axis_tuser;
+wire tx_udp_payload_axis_tvalid;
+wire tx_udp_payload_axis_tready;
+wire tx_udp_payload_axis_tlast;
+wire tx_udp_payload_axis_tuser;
 
-(* mark_debug = "true" *) wire [7:0] rx_fifo_udp_payload_axis_tdata;
-(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tvalid;
-(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tready;
-(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tlast;
-(* mark_debug = "true" *) wire rx_fifo_udp_payload_axis_tuser;
+wire [7:0] rx_fifo_udp_payload_axis_tdata;
+wire rx_fifo_udp_payload_axis_tvalid;
+wire rx_fifo_udp_payload_axis_tready;
+wire rx_fifo_udp_payload_axis_tlast;
+wire rx_fifo_udp_payload_axis_tuser;
 
 (* mark_debug = "true" *) wire [7:0] tx_fifo_udp_payload_axis_tdata;
-(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tvalid;
-(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tready;
-(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tlast;
-(* mark_debug = "true" *) wire tx_fifo_udp_payload_axis_tuser;
+wire tx_fifo_udp_payload_axis_tvalid;
+wire tx_fifo_udp_payload_axis_tready;
+wire tx_fifo_udp_payload_axis_tlast;
+wire tx_fifo_udp_payload_axis_tuser;
 
 // Configuration
 wire [47:0] local_mac   = 48'h02_00_00_00_00_00;
@@ -276,9 +276,9 @@ assign tx_udp_ip_dscp = 0;
 assign tx_udp_ip_ecn = 0;
 assign tx_udp_ip_ttl = 64;
 assign tx_udp_ip_source_ip = local_ip;
-assign tx_udp_ip_dest_ip = rx_udp_ip_source_ip;
-assign tx_udp_source_port = rx_udp_dest_port;
-assign tx_udp_dest_port = rx_udp_source_port;
+assign tx_udp_ip_dest_ip = rx_udp_ip_source_ip; //may change this to pc IP
+assign tx_udp_source_port = 16'd1234; //changed this from loopback
+assign tx_udp_dest_port = 16'd1234; //changed this from loopback
 assign tx_udp_length = rx_udp_length;
 assign tx_udp_checksum = 0;
 
@@ -315,7 +315,8 @@ wire ByteCountReset;
 wire [msgLength-1:0] message; //change this for longer message
 wire [7:0] messageBytes [msgLength/8-1:0];
 
-assign ByteCountEnable = 1'b1;
+//assign ByteCountEnable = 1'b1;
+assign ByteCountEnable = btn[1];
 //assign ByteCountReset = 1'b1;
 assign ByteCountReset = btn[0]; //coming from testbench, added a countRst (now btn[0])
 assign tx_udp_payload_axis_tlast = (ByteCount >= 8'h0a); //change this to reflect end of frame
@@ -619,7 +620,8 @@ udp_payload_fifo (
     .s_axis_tuser(rx_fifo_udp_payload_axis_tuser),
 
     // AXI output
-    .m_axis_tdata(tx_fifo_udp_payload_axis_tdata),
+    //.m_axis_tdata(tx_fifo_udp_payload_axis_tdata), changed this so values not overlapping
+    .m_axis_tdata(),
     .m_axis_tkeep(),
     .m_axis_tvalid(tx_fifo_udp_payload_axis_tvalid),
     .m_axis_tready(tx_fifo_udp_payload_axis_tready),

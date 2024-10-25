@@ -40,6 +40,8 @@ SYN_FILES += lib/eth/lib/axis/rtl/axis_fifo.v
 SYN_FILES += lib/eth/lib/axis/rtl/axis_async_fifo.v
 SYN_FILES += lib/eth/lib/axis/rtl/axis_async_fifo_adapter.v
 SYN_FILES += lib/eth/lib/axis/rtl/sync_reset.v
+SYN_FILES += lib/eth/rtl/counter.sv
+SYN_FILES += lib/eth/rtl/flopenr.sv
 
 # XDC files
 XDC_FILES = fpga.xdc

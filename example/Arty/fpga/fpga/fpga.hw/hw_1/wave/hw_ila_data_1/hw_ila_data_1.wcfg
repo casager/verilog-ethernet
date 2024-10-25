@@ -9,21 +9,21 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,024"></ZoomEndTime>
-      <Cursor1Time time="190"></Cursor1Time>
+      <ZoomStartTime time="170"></ZoomStartTime>
+      <ZoomEndTime time="1,195"></ZoomEndTime>
+      <Cursor1Time time="1,024"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
       <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="3" />
    <wave_markers>
    </wave_markers>
-   <wvobject type="array" fp_name="core_inst/rx_fifo_udp_payload_axis_tdata">
+   <wvobject type="array" fp_name="core_inst/btn">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_fifo_udp_payload_axis_tdata[7:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_fifo_udp_payload_axis_tdata[7:0]</obj_property>
+      <obj_property name="ElementShortName">core_inst/btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -36,139 +36,11 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_fifo_udp_payload_axis_tlast">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_fifo_udp_payload_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">rx_fifo_udp_payload_axis_tlast</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_fifo_udp_payload_axis_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_fifo_udp_payload_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">rx_fifo_udp_payload_axis_tready</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_fifo_udp_payload_axis_tuser">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_fifo_udp_payload_axis_tuser</obj_property>
-      <obj_property name="ObjectShortName">rx_fifo_udp_payload_axis_tuser</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_fifo_udp_payload_axis_tvalid">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_fifo_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">rx_fifo_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_fifo_udp_payload_axis_tlast">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_fifo_udp_payload_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">tx_fifo_udp_payload_axis_tlast</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_fifo_udp_payload_axis_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_fifo_udp_payload_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">tx_fifo_udp_payload_axis_tready</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_fifo_udp_payload_axis_tuser">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_fifo_udp_payload_axis_tuser</obj_property>
-      <obj_property name="ObjectShortName">tx_fifo_udp_payload_axis_tuser</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_fifo_udp_payload_axis_tvalid">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_fifo_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">tx_fifo_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="core_inst/rx_udp_payload_axis_tdata">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_udp_payload_axis_tdata[7:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_udp_payload_axis_tdata[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_udp_payload_axis_tlast">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_udp_payload_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">rx_udp_payload_axis_tlast</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_udp_payload_axis_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_udp_payload_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">rx_udp_payload_axis_tready</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_udp_payload_axis_tuser">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_udp_payload_axis_tuser</obj_property>
-      <obj_property name="ObjectShortName">rx_udp_payload_axis_tuser</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/rx_udp_payload_axis_tvalid">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/rx_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">rx_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="core_inst/tx_udp_payload_axis_tdata">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">core_inst/tx_udp_payload_axis_tdata[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_udp_payload_axis_tdata[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_udp_payload_axis_tlast">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_udp_payload_axis_tlast</obj_property>
-      <obj_property name="ObjectShortName">tx_udp_payload_axis_tlast</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_udp_payload_axis_tready">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_udp_payload_axis_tready</obj_property>
-      <obj_property name="ObjectShortName">tx_udp_payload_axis_tready</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_udp_payload_axis_tuser">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_udp_payload_axis_tuser</obj_property>
-      <obj_property name="ObjectShortName">tx_udp_payload_axis_tuser</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="core_inst/tx_udp_payload_axis_tvalid">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">core_inst/tx_udp_payload_axis_tvalid</obj_property>
-      <obj_property name="ObjectShortName">tx_udp_payload_axis_tvalid</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

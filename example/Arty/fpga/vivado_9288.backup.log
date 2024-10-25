@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct 22 18:36:14 2024
+# Process ID: 9288
+# Current directory: /home/casager/repos/verilog-ethernet/example/Arty/fpga
+# Command line: vivado
+# Log file: /home/casager/repos/verilog-ethernet/example/Arty/fpga/vivado.log
+# Journal file: /home/casager/repos/verilog-ethernet/example/Arty/fpga/vivado.jou
+# Running On: falcon, OS: Linux, CPU Frequency: 910.326 MHz, CPU Physical cores: 24, Host memory: 33318 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8286.586 ; gain = 0.000 ; free physical = 22919 ; free virtual = 29721
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led5'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led6'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led7'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led4'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led5'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led6'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led7'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:33]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led4'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led5'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led6'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led7'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:34]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:39]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports reset_n]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:39]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:40]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports reset_n]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:40]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[*]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:48]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {btn[*]}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:48]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'btn[*]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:49]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {btn[*]}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:49]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:57]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {sw[*]}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:58]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {sw[*]}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:58]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'uart_txd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_txd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:102]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports uart_txd]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'uart_txd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:103]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports uart_txd]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:104]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports uart_rxd]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:104]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:105]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports uart_rxd]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:105]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_rx_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rxd[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rxd[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rxd[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rxd[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rx_dv'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rx_er'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_tx_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_txd[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_txd[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_txd[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_txd[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_tx_en'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_col'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_crs'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_ref_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'phy_rx_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:128]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports phy_rx_clk]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:128]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_tx_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:129]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports phy_tx_clk]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:129]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_ref_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'phy_reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:131]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports {phy_ref_clk phy_reset_n}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:131]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'phy_ref_clk'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'phy_reset_n'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:132]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {phy_ref_clk phy_reset_n}]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:132]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'clk_int'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:151]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[4]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[5]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[6]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tdata[7]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:154]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[4]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[5]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[6]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tdata[7]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:158]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[4]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[5]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[6]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tdata[7]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:162]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[0]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[1]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[2]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[3]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[4]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[5]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[6]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tdata[7]'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:166]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tlast'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:170]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:170]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tready'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:174]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:174]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tuser'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:178]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:178]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_fifo_udp_payload_axis_tvalid'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:182]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:182]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tlast'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:186]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:186]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tready'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:190]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:190]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tuser'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:194]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:194]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/rx_udp_payload_axis_tvalid'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:198]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:198]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tlast'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:202]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:202]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tready'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:206]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tuser'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:210]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:210]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_fifo_udp_payload_axis_tvalid'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:214]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:214]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tlast'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:218]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:218]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tready'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:222]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:222]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tuser'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:226]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:226]
+WARNING: [Vivado 12-507] No nets matched 'core_inst/tx_udp_payload_axis_tvalid'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:230]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:230]
+WARNING: [Vivado 12-507] No nets matched 'clk_int'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:234]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc:234]
+Finished Parsing XDC File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc]
+Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -regexp -filter {(ORIG_REF_NAME =~ "mii_phy_if(__\w+__\d+)?" ||
+REF_NAME =~ "mii_phy_if(__\w+__\d+)?")}'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl:23]
+Finished Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl]
+Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -regexp -filter {(ORIG_REF_NAME =~ "eth_mac_(10g|1g_(gmii|rgmii)|mii)_fifo(__\w+__\d+)?" ||
+REF_NAME =~ "eth_mac_(10g|1g_(gmii|rgmii)|mii)_fifo(__\w+__\d+)?")}'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl:23]
+Finished Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl]
+Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == axis_async_fifo || REF_NAME == axis_async_fifo)}'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl:23]
+Finished Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == sync_reset || REF_NAME == sync_reset)}'. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl:23]
+Finished Sourcing Tcl File [/home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8500.066 ; gain = 0.000 ; free physical = 22825 ; free virtual = 29629
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 24 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 8689.645 ; gain = 658.539 ; free physical = 22591 ; free virtual = 29404
+set_property C_ENABLE_CLK_DIVIDER true [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga_core.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga_core.v:]
+save_constraints -force
+INFO: [Project 1-96] Target constrs file set to '/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc' for the 'constrs_1' constraints set.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/casager/repos/verilog-ethernet/example/Arty/fpga/rtl/fpga_core.v:]
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 18:45:33 2024...
