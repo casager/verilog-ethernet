@@ -276,7 +276,7 @@ assign tx_udp_ip_ttl = 64;
 assign tx_udp_ip_source_ip = local_ip;
 assign tx_udp_ip_dest_ip = rx_udp_ip_source_ip;
 assign tx_udp_source_port = rx_udp_dest_port;
-assign tx_udp_dest_port = rx_udp_source_port;
+assign tx_udp_dest_port = 36895; //changing this in order to hardwire port
 assign tx_udp_length = rx_udp_length;
 assign tx_udp_checksum = 0;
 

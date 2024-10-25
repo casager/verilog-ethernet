@@ -3,13 +3,13 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Oct 23 12:11:07 2024
-# Process ID: 150083
-# Current directory: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga
+# Start of session at: Wed Oct 16 22:11:34 2024
+# Process ID: 126509
+# Current directory: /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga
 # Command line: vivado
-# Log file: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/vivado.log
-# Journal file: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/vivado.jou
-# Running On: falcon, OS: Linux, CPU Frequency: 1285.423 MHz, CPU Physical cores: 24, Host memory: 33318 MB
+# Log file: /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/vivado.log
+# Journal file: /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/vivado.jou
+# Running On: falcon, OS: Linux, CPU Frequency: 1544.579 MHz, CPU Physical cores: 24, Host memory: 33318 MB
 #-----------------------------------------------------------
 start_gui
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
@@ -22,9 +22,8 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ip_user_files'.
+open_project /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -57,20 +56,15 @@ INFO: [Labtools 27-2221] Launch Output:
 
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B7CEE4A
-set_property PROGRAM.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.bit} [get_hw_devices xc7a100t_0]
-set_property PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-set_property PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.bit} [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-save_wave_config {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 12:39:57 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 16 22:40:04 2024...

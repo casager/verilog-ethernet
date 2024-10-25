@@ -3,13 +3,13 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Oct 23 12:11:07 2024
-# Process ID: 150083
+# Start of session at: Wed Oct 23 11:02:12 2024
+# Process ID: 15355
 # Current directory: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga
 # Command line: vivado
 # Log file: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/vivado.log
 # Journal file: /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/vivado.jou
-# Running On: falcon, OS: Linux, CPU Frequency: 1285.423 MHz, CPU Physical cores: 24, Host memory: 33318 MB
+# Running On: falcon, OS: Linux, CPU Frequency: 800.000 MHz, CPU Physical cores: 24, Host memory: 33318 MB
 #-----------------------------------------------------------
 start_gui
 open_project /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr
@@ -22,10 +22,10 @@ set_property PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga
 set_property FULL_PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
 set_property PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.ltx} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
 save_wave_config {/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

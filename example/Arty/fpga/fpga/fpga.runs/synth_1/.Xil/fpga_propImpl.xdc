@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc rfile:../../../../fpga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc rfile:../../../../fpga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {LOC E3 IOSTANDARD LVCMOS33} [get_ports clk]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Oct 17 17:51:18 2024
+| Date             : Wed Oct 23 12:09:38 2024
 | Host             : falcon running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
 | Design           : fpga
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.024 |        9 |       --- |             --- |
-| Slice Logic              |     0.007 |    10966 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     3394 |     63400 |            5.35 |
+| Slice Logic              |     0.007 |    10905 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     3380 |     63400 |            5.33 |
 |   CARRY4                 |    <0.001 |      265 |     15850 |            1.67 |
-|   Register               |    <0.001 |     5579 |    126800 |            4.40 |
-|   LUT as Distributed RAM |    <0.001 |      116 |     19000 |            0.61 |
+|   Register               |    <0.001 |     5535 |    126800 |            4.37 |
+|   LUT as Distributed RAM |    <0.001 |      112 |     19000 |            0.59 |
 |   LUT as Shift Register  |    <0.001 |      187 |     19000 |            0.98 |
 |   F7/F8 Muxes            |    <0.001 |       74 |     63400 |            0.12 |
 |   Others                 |     0.000 |      464 |       --- |             --- |
-| Signals                  |     0.010 |     8232 |       --- |             --- |
+| Signals                  |     0.010 |     8185 |       --- |             --- |
 | Block RAM                |     0.019 |        9 |       135 |            6.67 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |     0.004 |       34 |       210 |           16.19 |
@@ -157,7 +157,7 @@ Table of Contents
 |     eth_mac_inst          |     0.006 |
 |       eth_mac_1g_mii_inst |     0.001 |
 |       rx_fifo             |     0.004 |
-|     udp_complete_inst     |     0.027 |
+|     udp_complete_inst     |     0.028 |
 |       ip_complete_inst    |     0.019 |
 |       udp_inst            |     0.008 |
 |     udp_payload_fifo      |     0.007 |

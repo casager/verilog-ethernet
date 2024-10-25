@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/impl_1'
+HD_PWD='/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

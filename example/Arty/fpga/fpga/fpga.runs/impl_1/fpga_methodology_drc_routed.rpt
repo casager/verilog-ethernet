@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Thu Oct 17 17:51:17 2024
+| Date         : Wed Oct 23 12:09:37 2024
 | Host         : falcon running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
 | Design       : fpga
@@ -148,203 +148,203 @@ XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'btn[0]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {btn[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
 Related violations: <none>
 
 XDCH-2#2 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'btn[1]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {btn[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
 Related violations: <none>
 
 XDCH-2#3 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'btn[2]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {btn[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
 Related violations: <none>
 
 XDCH-2#4 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'btn[3]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {btn[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 49)
 Related violations: <none>
 
 XDCH-2#5 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'reset_n' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports reset_n]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 40)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 40)
 Related violations: <none>
 
 XDCH-2#6 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'sw[0]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {sw[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
 Related violations: <none>
 
 XDCH-2#7 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'sw[1]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {sw[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
 Related violations: <none>
 
 XDCH-2#8 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'sw[2]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {sw[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
 Related violations: <none>
 
 XDCH-2#9 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'sw[3]' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports {sw[*]}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 58)
 Related violations: <none>
 
 XDCH-2#10 Warning
 Same min and max delay values on IO port  
 The same input delay of 0.000 ns has been defined on port 'uart_rxd' for both max and min. Make sure this reflects the design intent.
 set_input_delay 0.000 [get_ports uart_rxd]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 105)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 105)
 Related violations: <none>
 
 XDCH-2#11 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led0_b' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#12 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led0_g' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#13 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led0_r' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#14 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led1_b' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#15 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led1_g' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#16 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led1_r' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#17 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led2_b' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#18 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led2_g' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#19 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led2_r' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#20 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led3_b' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#21 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led3_g' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#22 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led3_r' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#23 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led4' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#24 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led5' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#25 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led6' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#26 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'led7' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {led0_r led0_g led0_b led1_r led1_g led1_b led2_r led2_g led2_b led3_r led3_g led3_b led4 led5 led6 led7}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 34)
 Related violations: <none>
 
 XDCH-2#27 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'phy_ref_clk' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {phy_ref_clk phy_reset_n}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 132)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 132)
 Related violations: <none>
 
 XDCH-2#28 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'phy_reset_n' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports {phy_ref_clk phy_reset_n}]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 132)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 132)
 Related violations: <none>
 
 XDCH-2#29 Warning
 Same min and max delay values on IO port  
 The same output delay of 0.000 ns has been defined on port 'uart_txd' for both max and min. Make sure this reflects the design intent.
 set_output_delay 0.000 [get_ports uart_txd]
-/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 103)
+/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc (Line: 103)
 Related violations: <none>
 
 

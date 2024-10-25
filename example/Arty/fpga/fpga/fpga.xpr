@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9ca17a03a2c048a3a3579a2ce467031f"/>

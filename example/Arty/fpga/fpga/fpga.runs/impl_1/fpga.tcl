@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/impl_1/fpga.tcl"
+  variable script "/home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/impl_1/fpga.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,19 +130,19 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/wt [current_project]
-  set_property parent.project_path /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr [current_project]
-  set_property ip_output_repo /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/wt [current_project]
+  set_property parent.project_path /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.xpr [current_project]
+  set_property ip_output_repo /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/synth_1/fpga.dcp
+  add_files -quiet /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga/fpga.runs/synth_1/fpga.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/casager/repos/verilog-ethernet/example/Arty/fpga/fpga.xdc
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl
-  read_xdc -unmanaged /home/casager/repos/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl
+  read_xdc /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/fpga.xdc
+  read_xdc -unmanaged /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/mii_phy_if.tcl
+  read_xdc -unmanaged /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/lib/eth/syn/vivado/eth_mac_fifo.tcl
+  read_xdc -unmanaged /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/axis_async_fifo.tcl
+  read_xdc -unmanaged /home/casager/OG_VE/verilog-ethernet/example/Arty/fpga/lib/eth/lib/axis/syn/vivado/sync_reset.tcl
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
